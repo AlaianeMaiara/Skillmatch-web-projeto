@@ -1,0 +1,130 @@
+[
+  {
+    "id": 1,
+    "empresa": "Nimbus Tech",
+    "cargo": "Desenvolvedor(a) Front-end Jr",
+    "requisitos": [
+      "html",
+      "css",
+      "javascript",
+      "git"
+    ],
+    "salario": 3200,
+    "modalidade": "remoto",
+    "senioridadeMeses": 6,
+    "tipo": "frontend",
+    "stack": "css"
+  },
+  {
+    "id": 2,
+    "empresa": "Orbita Software",
+    "cargo": "Desenvolvedor(a) Front-end Pleno",
+    "requisitos": [
+      "javascript",
+      "css",
+      "html",
+      "react",
+      "git"
+    ],
+    "salario": 6500,
+    "modalidade": "hibrido",
+    "senioridadeMeses": 24,
+    "tipo": "frontend",
+    "stack": "react"
+  },
+  {
+    "id": 3,
+    "empresa": "Raiz Sistemas",
+    "cargo": "Desenvolvedor(a) Back-end Jr",
+    "requisitos": [
+      "javascript",
+      "node",
+      "sql",
+      "git"
+    ],
+    "salario": 3500,
+    "modalidade": "remoto",
+    "senioridadeMeses": 6,
+    "tipo": "generico"
+  },
+  {
+    "id": 4,
+    "empresa": "Vetor Digital",
+    "cargo": "Desenvolvedor(a) Full-stack Pleno",
+    "requisitos": [
+      "javascript",
+      "node",
+      "sql",
+      "html",
+      "css",
+      "git"
+    ],
+    "salario": 7200,
+    "modalidade": "presencial",
+    "senioridadeMeses": 24,
+    "tipo": "generico"
+  },
+  {
+    "id": 5,
+    "empresa": "Nimbus Tech",
+    "cargo": "Estágio em Desenvolvimento Web",
+    "requisitos": [
+      "html",
+      "css",
+      "git"
+    ],
+    "salario": 1800,
+    "modalidade": "remoto",
+    "senioridadeMeses": 0,
+    "tipo": "frontend",
+    "stack": "html"
+  },
+  {
+    "id": 6,
+    "empresa": "Orbita Software",
+    "cargo": "Desenvolvedor(a) React Sênior",
+    "requisitos": [
+      "javascript",
+      "react",
+      "css",
+      "html",
+      "git",
+      "testes"
+    ],
+    "salario": 11000,
+    "modalidade": "remoto",
+    "senioridadeMeses": 60,
+    "tipo": "frontend",
+    "stack": "react"
+  },
+  {
+    "id": 7,
+    "empresa": "Raiz Sistemas",
+    "cargo": "Analista de Dados Jr",
+    "requisitos": [
+      "sql",
+      "excel",
+      "python"
+    ],
+    "salario": 3400,
+    "modalidade": "presencial",
+    "senioridadeMeses": 6,
+    "tipo": "generico"
+  },
+  {
+    "id": 8,
+    "empresa": "Vetor Digital",
+    "cargo": "Desenvolvedor(a) Node.js Pleno",
+    "requisitos": [
+      "javascript",
+      "node",
+      "sql",
+      "git",
+      "testes"
+    ],
+    "salario": 6800,
+    "modalidade": "remoto",
+    "senioridadeMeses": 24,
+    "tipo": "generico"
+  }
+]
