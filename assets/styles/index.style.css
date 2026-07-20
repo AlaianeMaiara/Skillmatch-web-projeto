@@ -210,6 +210,7 @@ h1, h2, h3 {
 }
 
 .form-busca__botao:hover {
+  background-color: var(--cor-ambar-hover);
 }
 
 .form-busca__botao:focus-visible {
