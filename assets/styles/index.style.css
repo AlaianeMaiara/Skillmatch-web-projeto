@@ -40,6 +40,13 @@ img {
   display: block;
 }
 
+/* Garante que o atributo `hidden` do HTML sempre vença qualquer outra
+   regra de `display` deste arquivo (ex: .estado-erro tem display:flex,
+   que sem essa regra venceria o hidden e a caixa nunca sumiria). */
+[hidden] {
+  display: none !important;
+}
+
 body {
   margin: 0;
   font-family: var(--fonte-texto);
