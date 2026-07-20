@@ -135,7 +135,7 @@ export function mostrarConteudoPronto() {
   estadoErro.hidden = true;
   conteudoPronto.hidden = false;
 
-  const candidatoSalvo = carregarCandidatoDoLocalStorage();
+  const candidatoSalvo = carregarCandidato();
   if (candidatoSalvo) {
     preencherFormularioComCandidato(candidatoSalvo);
   }
@@ -312,7 +312,7 @@ function lidarComEnvioDoFormulario(evento, vagas) {
 
   exibirErrosDeValidacao([]); // limpa erros de uma tentativa anterior
 
-  salvarCandidatoNoLocalStorage(candidato);
+  salvarCandidato(candidato);
   exibirResumoDoPerfil(candidato);
 
   const resultados = encontrarMelhoresVagas(candidato, vagas, {
