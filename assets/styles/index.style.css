@@ -15,9 +15,10 @@
   --cor-navy-700: #1c2942;
   --cor-off-white: #f6f4ef;
   --cor-ambar: #e8a33d;
-  --cor-ambar-escuro: #c67f1e;
+  --cor-ambar-hover: #c58a33;
+  --cor-ambar-escuro: #9e6518;
   --cor-match: #4f7a5a;
-  --cor-gap: #b5673f;
+  --cor-gap: #ab613b;
   --cor-texto-claro: #f6f4ef;
   --cor-texto-escuro: #1c2231;
   --cor-texto-suave: #5c6478;
@@ -151,7 +152,7 @@ h1, h2, h3 {
 
 .form-busca__opcional {
   font-weight: 400;
-  color: #9a97a6;
+  color: var(--cor-texto-suave);
 }
 
 .form-erro {
