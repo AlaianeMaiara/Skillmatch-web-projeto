@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="SkillMatch compara suas skills com um catálogo de vagas e mostra o percentual de compatibilidade, o que falta aprender e qual vaga combina mais com o seu perfil." />
+  <title>SkillMatch — Encontre a vaga certa para você</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&family=Inter:wght@400;500;600&display=swap" />
+  <link rel="stylesheet" href="./assets/styles/index.style.css" />
+</head>
+<body>
+ 
+  <header class="cabecalho">
+    <div class="cabecalho__conteudo">
+      <p class="cabecalho__marca">
+        <img src="./assets/img/logo.svg" alt="" class="cabecalho__logo" width="28" height="28" />
+        SkillMatch
+      </p>
+      <h1 class="cabecalho__titulo">
+        Onde habilidades <br />
+        Encontram vagas.
+      </h1>
+      <p class="cabecalho__subtitulo">
+        Digite as tecnologias que você domina e veja, na hora, quais vagas
+        combinam mais com o seu perfil.
+      </p>
+    </div>
+  </header>
+ 
+  <main class="conteudo">
+ 
+    <p id="estado-carregando" class="estado-carregando" role="status">
+      Carregando vagas…
+    </p>
+    <div id="estado-erro" class="estado-erro" role="alert" hidden>
+      <p>Não foi possível carregar as vagas. Verifique sua conexão e tente novamente.</p>
+      <button type="button" id="botao-tentar-novamente" class="form-busca__botao">
+        Tentar novamente
+      </button>
+    </div>
+
+    <div id="conteudo-pronto" hidden>
+      <section class="busca" aria-labelledby="titulo-busca">
+        <h2 id="titulo-busca" class="secao-titulo">Seu perfil</h2>
+ 
+        <form id="form-busca" class="form-busca" novalidate>
+          <p id="form-erro" class="form-erro" role="alert" aria-live="assertive" hidden></p>
+ 
+          <div class="form-busca__grade">
+            <div class="form-busca__campo">
+              <label for="input-nome" class="form-busca__label">Nome</label>
+              <input
+                type="text"
+                id="input-nome"
+                class="form-busca__input"
+                placeholder="ex: Maria Silva"
+                autocomplete="off"
+                required
+                aria-required="true"
+              />
+            </div>
+ 
+            <div class="form-busca__campo">
+              <label for="input-area" class="form-busca__label">Área de atuação</label>
+              <input
+                type="text"
+                id="input-area"
+                class="form-busca__input"
+                placeholder="ex: Desenvolvimento Web"
+                autocomplete="off"
+                required
+                aria-required="true"
+              />
+            </div>
+ 
+            <div class="form-busca__campo">
+              <label for="input-experiencia" class="form-busca__label">
+                Experiência em meses <span class="form-busca__opcional">(opcional)</span>
+              </label>
+              <input
+                type="number"
+                id="input-experiencia"
+                class="form-busca__input"
+                placeholder="ex: 18"
+                min="0"
+                autocomplete="off"
+              />
+            </div>
+          </div>
+ 
+          <div class="form-busca__campo">
+            <label for="input-skills" class="form-busca__label">
+              Liste suas skills separadas por vírgula
+            </label>
+            <div class="form-busca__linha">
+              <input
+                type="text"
+                id="input-skills"
+                name="skills"
+                class="form-busca__input"
+                placeholder="ex: javascript, css, html, git"
+                autocomplete="off"
+                required
+                aria-required="true"
+              />
+              <button type="submit" class="form-busca__botao">
+                Encontrar vagas
+              </button>
+            </div>
+          </div>
+        </form>
+      </section>
+ 
+      <p id="perfil-resumo" class="perfil-resumo" hidden></p>
+ 
+      <section class="resultados" aria-labelledby="titulo-resultados">
+        <div class="resultados__cabecalho">
+          <h2 id="titulo-resultados" class="secao-titulo">Vagas compatíveis</h2>
+          <p id="contador-resultados" class="resultados__contador"></p>
+        </div>
+ 
+        <p id="recomendacao-estudo" class="recomendacao-estudo" hidden></p>
+ 
+        <!-- Estado: vazio (nenhuma busca feita ainda, ou busca sem resultados) -->
+        <p id="mensagem-vazia" class="mensagem-vazia" aria-live="polite">
+          Digite suas skills acima e clique em "Encontrar vagas" para ver os
+          resultados aqui.
+        </p>
+ 
+        <ul id="lista-resultados" class="lista-resultados"></ul>
+      </section>
+    </div>
+  </main>
+ 
+  <footer class="rodape">
+    <p>SkillMatch — projeto de estudo, roda 100% no navegador.</p>
+    <p id="contador-analises" class="rodape__contador"></p>
+  </footer>
+ 
+  <script type="module" src="./assets/scripts/main.js"></script>
+</body>
+</html>
